@@ -47,7 +47,7 @@ y_test = [''] * window + y_test + [''] * window
 if len(sys.argv) > 2:
 	max_iter = int(sys.argv[2])
 else:
-	max_iter = 20
+	max_iter = 200
 clf = MLPClassifier(verbose = True, max_iter = max_iter)
 print('Начинаю обучение...')
 clf.fit(X_train, y_train)
